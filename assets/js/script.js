@@ -70,12 +70,12 @@ let headerHtml = ` <nav
                   </li>
                   <li>
                     <a class="dropdown-item" href="${
-                      pathname == "/teacher-resources/"
+                      pathname == "/teacher-tutoring/"
                         ? "#"
-                        : "/teacher-resources/"
+                        : "/teacher-tutoring/"
                     }">
                       <i class="fa fa-blackboard me-2"></i> Teaching
-                      Resources</a
+                      Tutoring</a
                     >
                   </li>
                   <li>
@@ -85,6 +85,15 @@ let headerHtml = ` <nav
                         : "/coding-robotics-tutor/"
                     }">
                       <i class="fa fa-code me-2"></i> Coding &amp; Robotics</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="${
+                      pathname == "/coding-robotics-tutor/"
+                        ? "#"
+                        : "/school-tutoring/"
+                    }">
+                      <i class="fa fa-school me-2"></i> School Tutoring</a
                     >
                   </li>
                   <hr/>
@@ -156,11 +165,11 @@ let footerHtml = `<div class="container-fluid bg-light py-5">
                 </li>
                 <li class="mb-2">
                   <a href="${
-                    pathname == "/teacher-resources/"
+                    pathname == "/teacher-tutoring/"
                       ? "#"
-                      : "/teacher-resources/"
+                      : "/teacher-tutoring/"
                   }" class="link-dark text-decoration-none"
-                    >Teaching Resources</a
+                    >Teaching Tutoring</a
                   >
                 </li>
                 <li class="mb-2">
@@ -170,6 +179,15 @@ let footerHtml = `<div class="container-fluid bg-light py-5">
                       : "/coding-robotics-tutor/"
                   }" class="link-dark text-decoration-none"
                     >Coding and Robotics</a
+                  >
+                </li> 
+                <li class="mb-2">
+                  <a href="${
+                    pathname == "/coding-robotics-tutor/"
+                      ? "#"
+                      : "/school-tutoring/"
+                  }" class="link-dark text-decoration-none"
+                    >School Tutoring</a
                   >
                 </li> 
                 <hr/>

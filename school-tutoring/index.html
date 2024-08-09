@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/icons/css/all.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Teaching Resources | 6thtouch Robotics Academy</title>
+    <title>Home Tutoring | 6thtouch Robotics Academy</title>
   </head>
   <body>
     <header></header>
@@ -76,48 +76,49 @@
           <i class="fa fa-arrow-up"></i>
         </a>
       </div>
-      <section class="container-fluid home-tutoring py-5 mt-5">
+      <section class="container-fluid home-tutoring py-5 my-5 bg-light">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 mt-2">
-              <h1>Teaching Resources</h1>
+              <h1>Get school tutoring</h1>
               <p class="lead">
-                By utilizing 6thtouch Robotics Academy, educators can effortlessly
-                and swiftly access high-quality lesson structures and teaching
-                materials on their preferred devices.
+                By using School Tutoring to enroll in 6thtouch Robotics Academy,
+                students at that school would have a greater opportunity to be
+                creative and innovative. Additionally, 6thtouch Robotics Academy
+                would assist in overseeing extracurricular activities related to
+                what we offer.
               </p>
-              <a class="btn btn-primary">
+              <a href="#" class="btn btn-primary">
                 Get started
                 <i class="fa fa-arrow-up-right-from-square ms-2"></i>
               </a>
             </div>
-            <div class="col-md-6 mt-2"></div>
+            <div class="col-md-6 mt-2">
+              <img
+                src="/assets/images/home-tutoring.jpg"
+                alt=""
+                class="img-fluid rounded-3"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section class="container-fliud">
+      <section class="container-fliud bg-primary text-white py-5">
         <div class="container">
-          <p>Here how we can assist you as a teacher....</p>
-          <ul class="ms-2">
-            <li>
-              <p>
-                Search for resources by category and by specific teaching
-                objective
-              </p>
-            </li>
-            <li>
-              <p>
-                Vetted and curriculum aligned lesson plans and teaching
-                resources
-              </p>
-            </li>
-            <li>
-              <p>
-                Spend less time, data and effort searching for teaching
-                resources online
-              </p>
-            </li>
-          </ul>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <h1 data-counter="320">0</h1>
+              <p class="lead">Engaged Learners</p>
+            </div>
+            <div class="col-md-4">
+              <h1 data-counter="203">0</h1>
+              <p class="lead">Educational Summaries</p>
+            </div>
+            <div class="col-md-4">
+              <h1 data-counter="100">0</h1>
+              <p class="lead">Proficient Educators</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -127,5 +128,26 @@
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/icons/js/all.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script>
+      let counters = document.querySelectorAll("[data-counter]");
+
+      window.onscroll = (e) => {
+        if (
+          (innerWidth < 772 && scrollY < 559) ||
+          (innerWidth > 772 && scrollY < 381)
+        ) {
+          counters.forEach((counter) => {
+            let count = parseInt(counter.dataset.counter);
+            let x = 0;
+            let interval = setInterval(() => {
+              counter.innerHTML = `${x}+`;
+              x++;
+              if (x > count) clearInterval(interval);
+            }, 20);
+            window.onscroll = () => {};
+          });
+        }
+      };
+    </script>
   </body>
 </html>
