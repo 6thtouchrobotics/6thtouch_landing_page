@@ -104,7 +104,7 @@
         </div>
         <div class="container w-75 m-auto mt-4">
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4">
               <img
                 src="/assets/images/ev3.jpeg"
                 alt="hero image"
@@ -114,7 +114,7 @@
               />
               <p class="text-center fw-bold mt-2 fs-3">EV3</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
               <img
                 src="/assets/images/spike_logo.svg"
                 alt="hero image"
@@ -124,7 +124,7 @@
               />
               <p class="text-center fw-bold mt-2 fs-3">Spike</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
               <img
                 src="/assets/images/nano_img.jpg"
                 alt="hero image"
@@ -434,7 +434,11 @@
                       </li>
                     </ul>
                     <a class="btn btn-primary" href="/school-tutoring/">
-                      Apply for School Tutoring now
+                      School Tutoring
+                      <i class="fa fa-arrow-up-right-from-square ms-2"></i>
+                    </a>
+                    <a class="btn btn-primary" href="/school-tutoring-form/">
+                      Get Started
                       <i class="fa fa-arrow-up-right-from-square ms-2"></i>
                     </a>
                   </div>
@@ -766,6 +770,7 @@
       type();
       function getStarted(e) {
         e.scrollIntoView();
+        window.scrollTo(scrollX, scrollY);
       }
     </script>
   </body>

@@ -239,9 +239,12 @@ body {
 }
 
 .gallery-modal div.close {
-  text-align: end;
-  margin-right: 100px;
-  margin-bottom: 10px;
+  position: fixed;
+  right: 50px;
+  top: 20px;
+  z-index: 100000000000;
+  box-sizing: border-box;
+  text-align: right;
 }
 
 .gallery-modal div.close button {
@@ -257,7 +260,7 @@ body {
 }
 .gallery-modal img {
   width: 80%;
-  height: 400px;
+  height: 100%;
 }
 
 @keyframes move-up {
