@@ -63,9 +63,9 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/icons/css/all.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Coding &amp; Robotics | 6thtouch Robotics Academy</title>
+    <title>Form Successfully submitted | 6thtouch Robotics Academy</title>
   </head>
-  <body>
+  <body class="bg-light">
     <header></header>
     <main>
       <div
@@ -76,48 +76,17 @@
           <i class="fa fa-arrow-up"></i>
         </a>
       </div>
-      <section class="container-fluid home-tutoring py-5 mt-5 gradientBgColor">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 mt-2">
-              <h1>Coding &amp; Robotics</h1>
-              <p class="lead">
-                Receive top-notch coding and robotics training to gain deeper
-                insights into the tech realm. Step into the world of technology
-                with 6thtouch Robotics Academy, where we immerse you in
-                cutting-edge technologies that are truly remarkable.
-              </p>
-              <a href="/coding-robotics-tutor-form/" class="btn btn-primary">
-                Get started
-                <i class="fa fa-arrow-up-right-from-square ms-2"></i>
-              </a>
-            </div>
-            <div class="col-md-6 mt-2">
-              <img
-                src="/assets/images/coding-robotics.jpg"
-                alt=""
-                class="img-fluid rounded-3"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container-fliud bg-primary text-white py-5">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-md-4">
-              <h1 data-counter="100">0</h1>
-              <p class="lead">Engaged Learners</p>
-            </div>
-            <div class="col-md-4">
-              <h1 data-counter="10">0</h1>
-              <p class="lead">School Count</p>
-            </div>
-            <div class="col-md-4">
-              <h1 data-counter="100">0</h1>
-              <p class="lead">Proficient Educators</p>
-            </div>
-          </div>
+      <section class="container-fluid py-5">
+        <div class="container gradientBgColor p-5 rounded-3">
+          <h1>
+            <i class="fa fa-check-circle text-success"></i> Form Successfully
+            submitted
+          </h1>
+          <p>Thanks for contacting us, we will reply as soon as possible.</p>
+
+          <button class="btn btn-primary" onclick="history.back()">
+            <i class="fa fa-arrow-left"></i> Go Back
+          </button>
         </div>
       </section>
     </main>
@@ -126,28 +95,5 @@
 
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/icons/js/all.js"></script>
-    <script src="/assets/js/script.js"></script>
-
-    <script>
-      let counters = document.querySelectorAll("[data-counter]");
-
-      window.onscroll = (e) => {
-        if (
-          (innerWidth < 772 && scrollY < 559) ||
-          (innerWidth > 772 && scrollY < 381)
-        ) {
-          counters.forEach((counter) => {
-            let count = parseInt(counter.dataset.counter);
-            let x = 0;
-            let interval = setInterval(() => {
-              counter.innerHTML = `${x}+`;
-              x++;
-              if (x > count) clearInterval(interval);
-            }, 20);
-            window.onscroll = () => {};
-          });
-        }
-      };
-    </script>
   </body>
 </html>

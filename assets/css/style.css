@@ -301,3 +301,19 @@ body {
     background-color: blue;
   }
 }
+
+.hero {
+  background-color: #e3ffe7 !important;
+  color: black !important;
+}
+
+.gradientBgColor {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.gradientBgColor2 {
+  background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}
+
+.border-color {
+  border: 5px solid #23b6f0 !important;
+}

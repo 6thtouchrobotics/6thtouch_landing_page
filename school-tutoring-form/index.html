@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/icons/css/all.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Home Tutoring Form | 6thtouch Robotics Academy</title>
+    <title>School Tutoring Form | 6thtouch Robotics Academy</title>
   </head>
   <body>
     <header></header>
@@ -78,14 +78,11 @@
       </div>
       <section class="container-fluid py-5">
         <div class="container">
-          <h1>
-            Application for Home Tutoring <br />
-            Services
-          </h1>
-          <p>Please complete this form to request a tutor.</p>
+          <h1>Application for Teachers Tutoring</h1>
+          <p>Please complete this form to request a tutor as a teacher.</p>
           <form
             class="row"
-            action="https://formspree.io/f/xyyronkn"
+            action="https://formspree.io/f/xblryyrq"
             method="post"
           >
             <div class="col-md-6 mt-3">
@@ -147,6 +144,21 @@
               </div>
             </div>
             <div class="col-md-6 mt-3">
+              <div class="form-floating">
+                <input
+                  type="tel"
+                  class="form-control form-control-lg"
+                  placeholder="Name of school/organization *"
+                  name="Name of school/organization"
+                  required
+                />
+                <label for="Name of school/organization"
+                  >Name of school/organization
+                  <span class="text-danger">*</span></label
+                >
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
               <select
                 class="form-select form-select-lg h-100"
                 name="Country"
@@ -176,13 +188,13 @@
 
             <div class="col-md-6 mt-3">
               <select
-                name="Number of students to be tutored"
+                name="Number of teachers to be tutored"
                 id=""
                 class="form-select form-select-lg"
                 required
               >
                 <option selected value="">
-                  Number of students to be tutored *
+                  Number of teachers to be tutored *
                 </option>
                 <option>0-2</option>
                 <option>2-5</option>
@@ -198,6 +210,7 @@
                 <option>No preference</option>
               </select>
             </div>
+
             <div class="col-md-12 mt-3">
               <div class="form-floating">
                 <input

@@ -89,7 +89,7 @@ let headerHtml = ` <nav
                   </li>
                   <li>
                     <a class="dropdown-item" href="${
-                      pathname == "/coding-robotics-tutor/"
+                      pathname == "/school-tutoring/"
                         ? "#"
                         : "/school-tutoring/"
                     }">
@@ -124,7 +124,7 @@ let headerHtml = ` <nav
         </div>
       </nav>`;
 
-let footerHtml = `<div class="container-fluid bg-light py-5">
+let footerHtml = `<div class="container-fluid gradientBgColor py-5">
         <div class="container">
           <div class="row">
             <div class="col-md-6 mb-4 mb-md-0">
@@ -183,7 +183,7 @@ let footerHtml = `<div class="container-fluid bg-light py-5">
                 </li> 
                 <li class="mb-2">
                   <a href="${
-                    pathname == "/coding-robotics-tutor/"
+                    pathname == "/school-tutoring/"
                       ? "#"
                       : "/school-tutoring/"
                   }" class="link-dark text-decoration-none"
@@ -249,23 +249,23 @@ let footerHtml = `<div class="container-fluid bg-light py-5">
               <h5 class="mb-4">Social Media</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a href="#" class="link-dark text-decoration-none"
-                    ><i class="me-2 fab fa-facebook"></i> Facebook</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="link-dark text-decoration-none"
-                    ><i class="me-2 fab fa-twitter"></i> Twitter</a
-                  >
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="link-dark text-decoration-none"
+                  <a href="https://www.linkedin.com/in/andrew-aisagbonhi-687521145/" target="_black" class="link-dark text-decoration-none"
                     ><i class="me-2 fab fa-linkedin"></i> Linkedin</a
                   >
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="link-dark text-decoration-none"
+                  <a href="https://www.instagram.com/6thtouch_robotics/" target="_blank" class="link-dark text-decoration-none"
                     ><i class="me-2 fab fa-instagram"></i> Instagram</a
+                  >
+                </li>
+                 <li class="mb-2">
+                  <a href="#" target="_blank" class="link-dark text-decoration-none"
+                    ><i class="me-2 fab fa-facebook"></i> Facebook</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" target="_blank" class="link-dark text-decoration-none"
+                    ><i class="me-2 fab fa-twitter"></i> Twitter</a
                   >
                 </li>
               </ul>

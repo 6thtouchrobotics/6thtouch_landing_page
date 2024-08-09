@@ -68,12 +68,6 @@
   <body>
     <header></header>
     <main>
-      <div class="video-container">
-        <video autoplay loop muted>
-          <source src="/assets/videos/bg-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <div
         class="go-up-arrow position-fixed bottom-0 end-0 me-3 mb-3"
         id="upArrowBtn"
@@ -84,7 +78,7 @@
       </div>
       <!-- Hero Section -->
       <section
-        class="px-4 py-5 my-5 text-center text-light"
+        class="px-4 py-5 mt-5 text-center text-light hero"
         aria-label="hero-section"
       >
         <h1 class="display-5 fw-bold">
@@ -101,18 +95,52 @@
             <button
               type="button"
               class="btn btn-primary btn-lg px-4 gap-3 shadow"
-              onclick="getStarted()"
+              onclick="getStarted(this)"
             >
               Get started
               <i class="fa fa-arrow-up-right-from-square ms-2"></i>
             </button>
           </div>
         </div>
+        <div class="container w-75 m-auto mt-4">
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="/assets/images/ev3.jpeg"
+                alt="hero image"
+                width="200"
+                height="200"
+                class="rounded-3 border border-primary border-5 p-1"
+              />
+              <p class="text-center fw-bold mt-2 fs-3">EV3</p>
+            </div>
+            <div class="col-4">
+              <img
+                src="/assets/images/spike_logo.svg"
+                alt="hero image"
+                width="200"
+                height="200"
+                class="rounded-3 border border-primary border-5 p-1"
+              />
+              <p class="text-center fw-bold mt-2 fs-3">Spike</p>
+            </div>
+            <div class="col-4">
+              <img
+                src="/assets/images/nano_img.jpg"
+                alt="hero image"
+                width="200"
+                height="200"
+                class="rounded-3 border border-primary border-5 p-1"
+              />
+              <p class="text-center fw-bold mt-2 fs-3">Arduino</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Solution Section -->
       <section
-        class="container-fluid bg-light text-black py-5 radius-container-down"
+        class="container-fluid gradientBgColor text-black py-5"
         id="solutionSection"
       >
         <div class="container">
@@ -281,7 +309,7 @@
                       6thtouch Robotics offers competent and high-quality
                       training for instructors and coaches. We equip them with
                       the skills they need to teach robotics and coding more
-                      successfully.
+                      primaryfully.
                     </p>
                     <p>This is what you should expect from us:</p>
                     <ul class="ms-2">
@@ -317,7 +345,13 @@
                       <i class="fa fa-arrow-up-right-from-square ms-2"></i>
                     </a>
                   </div>
-                  <div class="col-md-6 mt-2"></div>
+                  <div class="col-md-6 mt-2">
+                    <img
+                      src="/assets/images/teachers-tutoring.jfif"
+                      alt=""
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
                 </div>
               </div>
               <div
@@ -399,12 +433,18 @@
                         <p>More productive co-curriculum activities</p>
                       </li>
                     </ul>
-                    <button class="btn btn-primary">
+                    <a class="btn btn-primary" href="/school-tutoring/">
                       Apply for School Tutoring now
                       <i class="fa fa-arrow-up-right-from-square ms-2"></i>
-                    </button>
+                    </a>
                   </div>
-                  <div class="col-md-6 mt-2"></div>
+                  <div class="col-md-6 mt-2">
+                    <img
+                      src="/assets/images/gallery_image 11.jpg"
+                      alt=""
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -458,42 +498,12 @@
       </section>
 
       <!-- Testimonies Section -->
-      <section class="container-fluid bg-light text-black radius-container">
+      <section class="container-fluid gradientBgColor text-black">
         <div class="container py-4">
           <h2 class="text-center">Testimonies</h2>
           <div class="container mt-5">
             <div class="row gx-5">
               <div class="col-md-4 rounded-3 border border-light border-5 p-3">
-                <p class="lead">
-                  “I am so glad I chose Nigenius tutoring service for my four
-                  kids. The Instructors are warming, receptive, detailed,
-                  professional; and extremely patient. They are always willing
-                  to answer any questions and very flexible with scheduling
-                  tutoring sessions; which gives room for the graphical
-                  progression of each child's performance to be explained."
-                  <br />
-                  <span class="fw-bold text-primary"
-                    >- PADev3 Technologies</span
-                  >
-                </p>
-              </div>
-              <div class="col-md-4 rounded-3 border border-light border-5 p-3">
-                <p class="lead">
-                  “I am so glad I chose Nigenius tutoring service for my four
-                  kids. The Instructors are warming, receptive, detailed,
-                  professional; and extremely patient. They are always willing
-                  to answer any questions and very flexible with scheduling
-                  tutoring sessions; which gives room for the graphical
-                  progression of each child's performance to be explained."
-                  <br />
-                  <span class="fw-bold text-primary"
-                    >- PADev3 Technologies</span
-                  >
-                </p>
-              </div>
-              <div
-                class="col-md-4 shrdow rounded-3 border border-light border-5 p-3"
-              >
                 <p class="lead">
                   “I am so glad I chose Nigenius tutoring service for my four
                   kids. The Instructors are warming, receptive, detailed,
@@ -548,7 +558,7 @@
       </section>
 
       <!-- Sponsors Section -->
-      <section class="container-fluid bg-light text-black radius-container">
+      <section class="container-fluid gradientBgColor text-black">
         <div class="container py-4">
           <h2 class="text-center">Our proud sponsors</h2>
           <div class="container px-4" id="featured-3">
@@ -725,13 +735,7 @@
     <script src="/assets/icons/js/all.js"></script>
     <script src="/assets/js/script.js"></script>
     <script defer>
-      const texts = [
-        "Creative",
-        "Innovative",
-        "Genius",
-        "Motivated",
-        "Learning",
-      ];
+      const texts = ["Creative", "Innovative", "a Genius", "Motivated"];
 
       const textElement = document.getElementById("text");
 
@@ -760,9 +764,8 @@
         }
       }
       type();
-      function getStarted() {
-        let solutionSection = document.querySelector("#solutionSection");
-        solutionSection.scrollIntoView();
+      function getStarted(e) {
+        e.scrollIntoView();
       }
     </script>
   </body>
