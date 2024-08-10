@@ -197,9 +197,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
+  background-size: cover;
   height: 300px;
   padding: 0;
   overflow: hidden;
+}
+
+#founderContainer {
+  background-image: url("/assets/images/founder_img.jpg");
 }
 
 #founderContainer .info,
