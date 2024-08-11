@@ -193,7 +193,6 @@ body {
 
 #founderContainer,
 #tutorContainer {
-  background-image: url("/assets/images/robot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -324,4 +323,47 @@ body {
 
 .border-color {
   border: 5px solid #23b6f0 !important;
+}
+
+.btn-home {
+  background-color: red;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+.btn-teacher {
+  background-color: navy;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+.btn-coding {
+  background-color: green;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+.btn-school {
+  background-color: greenyellow;
+  color: black;
+  transition: all 0.5s ease-out;
+}
+
+.btn-home:hover,
+.btn-teacher:hover,
+.btn-coding:hover,
+.btn-school:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.btn-home.active,
+.btn-teacher.active,
+.btn-coding.active,
+.btn-school.active {
+  transform: scale(1.2);
+}
+
+.btn-school:hover {
+  color: black !important;
 }
