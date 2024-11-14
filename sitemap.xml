@@ -41,8 +41,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-  
-    <!-- Home tutoring Page -->
+
+  <!-- Home tutoring Page -->
 
   <url>
     <loc>https://6thtouchrobotics.com.ng/home-tutoring/</loc>
@@ -56,7 +56,7 @@
     <priority>0.5</priority>
   </url>
 
-    <!-- School tutoring Page -->
+  <!-- School tutoring Page -->
 
   <url>
     <loc>https://6thtouchrobotics.com.ng/school-tutoring/</loc>
@@ -70,7 +70,7 @@
     <priority>0.5</priority>
   </url>
 
-    <!-- Teacher tutoring Page -->
+  <!-- Teacher tutoring Page -->
 
   <url>
     <loc>https://6thtouchrobotics.com.ng/teacher-tutoring/</loc>
