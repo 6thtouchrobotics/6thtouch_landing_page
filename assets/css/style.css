@@ -61,6 +61,7 @@ body {
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
   white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav-underline .nav-link {
@@ -218,19 +219,6 @@ body {
 #founderContainer:hover .info,
 #tutorContainer:hover .info {
   transform: translateY(0);
-}
-
-#tutorContainer.mumuni-azeez {
-  background-image: url("/assets/images/mumuni_azeez.jpg");
-}
-#tutorContainer.idowu-farouk {
-  background-image: url("/assets/images/farouk.jpg");
-}
-#tutorContainer.maxwell {
-  background-image: url("/assets/images/maxwell.jpg");
-}
-#tutorContainer.akalugwu {
-  background-image: url("/assets/images/akalugwu.jpg");
 }
 
 .gallery-image {
